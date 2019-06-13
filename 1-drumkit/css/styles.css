@@ -1,47 +1,39 @@
-body {
-  background-image: url("../images/drum.jpg");
+
+
+html {
+  font-size: 10px;
+  background: url("../images/drum.jpg") bottom center;
+  background-size: cover;
 }
 
-.mainContainer {
-
-
+body,html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 
-.drumsGrid {
-  height: 100vh;
-  border: 1px red solid;
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+.keys {
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
 }
-
-.drumRow {
-  border: 1px blue solid;
-  grid-row: 2;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-}
-
-/* .key {
-  border: 1px white solid;
-  color: white;
-  background-color: #4155e5;
-  opacity: 0.4;
-} */
 
 .key {
-    border: 1px solid white;
-    border-radius: .5rem;
-    margin: 1vh;
-    font-size: 1rem;
-    padding: 1rem .5rem;
-    transition: all .07s ease;
-    width: 4rem;
-    height: 4rem;
-    text-align: center;
-    color: white;
-    background: rgba(0,0,0,0.4);
-    text-shadow: 0 0 0.5rem #0000007a;
+  border: .4rem solid black;
+  border-radius: .5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all .07s ease;
+  width: 10rem;
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,0.4);
+  text-shadow: 0 0 .5rem black;
 }
+
 .playing {
   transform: scale(1.1);
   border-color: #ffc600;
